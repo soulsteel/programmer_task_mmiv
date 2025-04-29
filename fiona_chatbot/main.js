@@ -6,7 +6,6 @@ function printLetterByLetter(destination, message, speed){
     resDiv.appendChild(p);
 
     var interval = setInterval(function(){
-        //let resDiv = document.getElementById(destination).innerHTML += message.charAt(i);
         p.innerHTML += message.charAt(i);
 
         i++;
@@ -24,7 +23,7 @@ async function sendData() {
     });
 
     const result = await response.json();
-    printLetterByLetter("result", result.data, 100);
+    printLetterByLetter("result", result.data, 50);
 
 }
 
